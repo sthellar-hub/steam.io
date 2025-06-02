@@ -93,6 +93,8 @@ section{
     background-color: white;
     width: 1440px;
 }
+
+
 .gta{
     display: flex;
     flex-direction:column;
@@ -111,7 +113,7 @@ button:hover{
 }
 
 .gta h1{
-    color: black;
+    color:#0f40e0;
 }
 .gta button{
     width: auto;
@@ -153,7 +155,9 @@ button:hover{
 .box:hover{
     background-color: rgb(182, 172, 172);
 }
-
+.box h2 {
+    color: #0f40e0;
+}
 .reverse{
     flex-direction: column-reverse;
 }
