@@ -1,0 +1,176 @@
+body {
+    background-image: linear-gradient(to right, rgb(23, 61, 117), rgb(27, 76, 150), rgb(46, 117, 223));
+}
+
+* {
+   margin: 0px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 10px 20px;
+}
+
+.steam{
+    margin-left: 10px;
+}
+
+.steam:hover{
+    transform: scale(1.1);
+}
+
+/* ============ MENU PADRÃO DESKTOP ============ */
+nav.main-nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    padding: 30px;
+}
+
+nav li:hover {
+    background-color: rgb(78, 76, 76);
+    border-radius: 10px;
+}
+
+nav a {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #466be4;
+}
+
+/* ============ BOTÃO HAMBÚRGUER ============ */
+.hamburger-menu {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+/* ============ MEDIA QUERY - MOBILE ============ */
+@media (max-width: 1024px) {
+    .hamburger-menu {
+        display: block;
+    }
+
+    nav.main-nav {
+        display: none;
+        position: absolute;
+        top: 100px;
+        right: 0;
+        background-color: black;
+        width: 100%;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        z-index: 1000;
+    }
+
+    nav.main-nav.active {
+        display: block;
+    }
+
+    nav.main-nav ul {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+
+    nav.main-nav li {
+        padding: 15px 0;
+    }
+}
+
+/* ============ CONTEÚDO ============ */
+main {
+    padding: 10px;
+}
+
+.titulo h1 {
+    font-size: 35px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: yellow;
+}
+
+.jogos {
+    display: flex;
+    background-color: rgb(202, 198, 198);
+    margin-bottom: 20px;
+    border-radius: 10px;
+    justify-content: space-between;
+}
+
+.jogos:hover{
+    background-color: rgb(165, 163, 163);
+}
+
+.imagem img {
+    width: 250px;
+    height: 160px;
+    padding: 15px;
+}
+
+.sobre-jogo {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: flex-end;   
+    text-align: right;
+    padding-right: 30px;       
+}
+
+.sobre-jogo h2 {
+    margin: 0;
+    padding-bottom: 35px;
+    font-size: 25px;
+}
+
+.sobre-jogo p {
+    margin: 5px 0;
+    color: rgb(39, 37, 37);
+}
+
+.sobre-jogo a {
+    margin-top: 20px;
+    color: rgb(136, 210, 253);
+    background-color: #576fbe;
+    text-decoration: none;
+    padding: 8px;
+}
+
+.sobre-jogo a:hover {
+    background-color: #8ea3e7;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    background-color: black;
+    color: rgb(248, 245, 245);
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+footer a:hover {
+    background-color: #0f40e0;
+}

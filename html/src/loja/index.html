@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja - STEAM</title>
+    <link rel="stylesheet" href="/html/src/loja/style.css">
+    
+</head>
+
+<body>
+    <header>
+        <img class="steam" src="https://img.itch.zone/aW1nLzE4MzUyNzU5LnBuZw==/original/8DRbfb.png" height="100px">
+        <!-- Botão de menu hambúrguer -->
+        <a class="hamburger-menu" aria-label="Abrir menu">&#9776;</a>
+
+
+        <!-- Menu de navegação -->
+        <nav class="main-nav">
+            <ul class="nav-list">
+              <li><a href="/html/src/loja/index.html">LOJA</a></li>
+              <li><a href="/html/src/categorias/index.html">CATEGORIAS</a></li>
+              <li><a href="/html/src/biblioteca/index.html">BIBLIOTECA</a></li>
+            </ul>
+          </nav>
+          
+
+    </header>
+    <main width="1024px">
+        <h1>- Lançamento</h1>
+        <section class="g">
+            <div class="gtabox">
+                <img class="imgta" src="https://300mind.studio/blog/wp-content/uploads/2023/12/GTA-6-Game.webp" />
+                <div class="gta">
+                    <h1>GTA VI</h1>
+                    <h1 class="din">R$709,90</h1>
+                    <button>Comprar</button>
+                </div>
+            </div>
+        </section>
+
+        <h1>- Ofertas Especiais</h1>
+        <section class="ofertas">
+            <div class="esquerda">
+                <div class="box">
+                    <img class="grandimg"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgK020HdJlnxesOkODk-1vJc7aVnM0aBd6Eg&s"
+                        alt="cyber" />
+                    <h2>Cyberpunk 2077</h2>
+                    <h2>R$60,00</h2>
+                </div>
+
+                <div class="koko">
+                    <div class="box">
+                        <img class="menorimg"
+                            src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/391540/header.jpg?t=1579096091"
+                            alt="Undertale" />
+                        <h2>Undertale</h2>
+                        <h2>R$19,90</h2>
+                    </div>
+
+                    <div class="box reverse">
+                        <img class="menorimg"
+                            src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1888930/header.jpg?t=1746041320"
+                            alt="Tlou" />
+                        <h2>The Last Of Us </h2>
+                        <h2>R$266,14</h2>
+                    </div>
+                </div>
+
+            </div>
+            <div class="direita">
+                <div class="box reverse">
+                    <img class="grandimg"
+                        src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1623730/058bd87dc17a7179e07c446aa64d0574ca43ab9d/header.jpg?t=1745898236"
+                        alt="palworld" />
+                    <h2>Palworld </h2>
+                    <h2>R$29,90</h2>
+                </div>
+
+                <div class="koko">
+                    <div class="box">
+                        <img class="menorimg"
+                            src="https://meups.com.br/wp-content/uploads/2023/12/Baldurs-Gate-3-8-900x503.jpg"
+                            alt="baldur" />
+                        <h2>Baldur's Gate III</h2>
+                        <h2>R$95,50</h2>
+                    </div>
+
+                    <div class="box reverse ">
+                        <img class="menorimg"
+                            src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/292030/ad9240e088f953a84aee814034c50a6a92bf4516/header.jpg?t=1746612330"
+                            alt="witcher" />
+                        <h2>The Witcher III </h2>
+                        <h2>R$40,00</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <a href="https://store.steampowered.com/about/" target="_blank">Baixar Steam</a>
+    </footer>
+
+    <script>
+        const toggleButton = document.querySelector('.hamburger-menu');
+        const nav = document.querySelector('.main-nav');
+      
+        toggleButton.addEventListener('click', () => {
+          nav.classList.toggle('active');
+        });
+      </script>
+      
+</body>
+
+</html>
